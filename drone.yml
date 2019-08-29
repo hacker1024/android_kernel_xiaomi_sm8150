@@ -19,7 +19,7 @@ steps:
       RELEASE_VERSION: "r2"
       RELEASE_CODENAME: "CLANG"
     commands:
-      - apt-get update && apt-get install -y bison build-essential bc bison curl libssl-dev git zip python
+      - apt-get update && apt-get install -y bison build-essential bc bison curl libssl-dev git zip python flex
       - git clone https://github.com/UtsavisGreat/scripts.git -b master script && cd script
       - bash dronesetup.sh --clang
       - bash kernel.sh  --clang
